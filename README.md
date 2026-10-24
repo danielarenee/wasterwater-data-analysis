@@ -55,14 +55,6 @@ y la compilación de datos de muestreo) es material de consulta. **Ningún scrip
 | `metales_actlabs.csv` | `preparar_metales.py` | El Excel de Actlabs en el mismo formato que `muestras.csv` |
 | `metales_actlabs_imputado_epa.csv` | `imputacion_inorg.py` | Metales con los censurados imputados |
 
-### Documentación (`docs/`)
-
-- `NOM-001-Semarnat_2021.pdf` y `Declaratoria_Rio_AtoyacyXochiac_o_Hueyapan.pdf`: marco normativo de descarga.
-- `articulo.pdf`: artículo de referencia metodológica.
-- `contexto_figuras_reporte.txt` y `contexto_figuras_inorg.txt`: título, descripción y puntos
-  clave de cada figura, para redactar el reporte.
-- `hallazgos_generales.md`: hallazgos del análisis de metales y comparación con el orgánico.
-
 ---
 
 ## Cómo correrlo
@@ -136,6 +128,4 @@ completa. Hay dos exclusiones:
 
 - Comparar las concentraciones con los límites de la NOM-001-SEMARNAT-2021 y de la
   Declaratoria del río Atoyac.
-- Cruzar los resultados orgánicos con los inorgánicos.
-- Agregar al repo el informe original de CIATEC, para poder rastrear de dónde salió
-  `muestras.csv`.
+- Cruzar los resultados orgánicos con los inorgánicos
