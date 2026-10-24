@@ -1,0 +1,25 @@
+id_compuesto,nombre_compuesto,familia,unidad,lpc,num_lavanderias_st
+1,Ácido perfluoro-n-pentanoico,PFAS,ng/L,2.0,5
+2,Ácido perfluorobutano-1-sulfónico,PFAS,ng/L,2.0,5
+6,"Dodecafluoro-3H-4,8-dioxanonanoato de sodio",PFAS,ng/L,2.0,5
+7,Ácido perfluorohexano-1-sulfónico,PFAS,ng/L,2.0,5
+10,Ácido perfluoroheptanosulfónico,PFAS,ng/L,2.0,5
+13,Perfluorooctano sulfonamida,PFAS,ng/L,2.0,5
+14,Ácido perfluorooctano-1-sulfónico,PFAS,ng/L,2.0,5
+29,Áciod perfluoro-n-butanoico,PFAS,ng/L,2.0,5
+33,"4,4'-Metilen-bis (2-cloroanilina)",Sustancias Restringidas,µg/mL,0.01,5
+41,Clorotalonil,Sustancias Restringidas,µg/mL,0.01,5
+46,Dietilftalato,Sustancias Restringidas,µg/mL,0.01,5
+50,Diisononilftalato,Sustancias Restringidas,µg/mL,0.01,5
+51,Dimetilformamida,Sustancias Restringidas,µg/mL,0.01,5
+53,Dimetilfumarato,Sustancias Restringidas,µg/mL,0.01,5
+76,Criseno,Sustancias Restringidas,µg/mL,0.01,5
+96,p-Nonilfenol,Sustancias Restringidas,µg/mL,0.01,5
+8,Ácido perfluoro-n-octanoico,PFAS,ng/L,2.0,4
+20,9-Clorohexadecafluoro-3-oxanona-1-sulfonato de potasio,PFAS,ng/L,2.0,4
+57,Fenantreno,Sustancias Restringidas,µg/mL,0.01,4
+5,Ácido perfluoro-n-heptanoico,PFAS,ng/L,2.0,3
+38,Butilbencilftalato,Sustancias Restringidas,µg/mL,0.01,3
+43,"Dibenzo (a,h) antraceno",Sustancias Restringidas,µg/mL,0.01,3
+58,Fluoranteno,Sustancias Restringidas,µg/mL,0.01,3
+78,Pertano,Sustancias Restringidas,µg/mL,0.01,3

@@ -1,0 +1,98 @@
+id_compuesto,nombre_compuesto,familia,unidad,lpc,det_ST,total_muestras_ST,pct_det_ST,det_total,pct_det_total,det_T,det_L
+1,Ácido perfluoro-n-pentanoico,PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+2,Ácido perfluorobutano-1-sulfónico,PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+3,Ácido perfluoro-n-hexanoico,PFAS,ng/L,2.0,3,7,42.9,6,46.2,3,0
+4,Ácido perfluoro(2-metil-3-oxahexanoico),PFAS,ng/L,2.0,3,7,42.9,7,53.8,4,0
+5,Ácido perfluoro-n-heptanoico,PFAS,ng/L,2.0,5,7,71.4,8,61.5,3,0
+6,"Dodecafluoro-3H-4,8-dioxanonanoato de sodio",PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+7,Ácido perfluorohexano-1-sulfónico,PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+8,Ácido perfluoro-n-octanoico,PFAS,ng/L,2.0,5,7,71.4,9,69.2,4,0
+9,"Ácido 1H,1H,2H,2H perfluorooctano sulfónico",PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+10,Ácido perfluoroheptanosulfónico,PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+11,Ácido 2H-perfluoro-2-decenoico,PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+12,Ácido perfluoro-n-nonanoico,PFAS,ng/L,2.0,2,7,28.6,4,30.8,2,0
+13,Perfluorooctano sulfonamida,PFAS,ng/L,2.0,6,7,85.7,10,76.9,3,1
+14,Ácido perfluorooctano-1-sulfónico,PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+15,N-Metilperfluoro-1-octanosulfonamida,PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+16,Ácido perfluoro-n-decanoico,PFAS,ng/L,2.0,0,7,0.0,1,7.7,1,0
+17,Sulfluoramida,PFAS,ng/L,2.0,1,7,14.3,2,15.4,0,1
+18,"Ácido 1H,1H,2H,2H-perfluorodecanosulfónico",PFAS,ng/L,2.0,1,7,14.3,1,7.7,0,0
+19,Ácido perfluoro-n-undecanoico,PFAS,ng/L,2.0,0,7,0.0,1,7.7,1,0
+20,9-Clorohexadecafluoro-3-oxanona-1-sulfonato de potasio,PFAS,ng/L,2.0,5,7,71.4,9,69.2,3,1
+21,Ácido N-metilperfluoro-1-octanosulfonamidoacético,PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+22,Ácido N-etilperfluoro-1-octanosulfonamidoacético,PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+23,Ácido perfluorodecano-1-sulfónico,PFAS,ng/L,2.0,2,7,28.6,5,38.5,2,1
+24,Ácido perfluoro-n-dodecanoico,PFAS,ng/L,2.0,0,7,0.0,1,7.7,1,0
+25,Ácido perfluoro-n-tridecanoico,PFAS,ng/L,2.0,0,7,0.0,1,7.7,1,0
+26,Ácido perfluoro-n-tetradecanoico,PFAS,ng/L,2.0,0,7,0.0,1,7.7,1,0
+27,Ácido perfluorohexadecanoico,PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+28,Fosfato de bis(2-(perfluorooctil)etilo),PFAS,ng/L,2.0,0,7,0.0,0,0.0,0,0
+29,Áciod perfluoro-n-butanoico,PFAS,ng/L,2.0,7,7,100.0,13,100.0,5,1
+30,"3,3'-Dimetil-4,4'-Diaminodifenilmetano",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+31,"3,3'-Dimetoxibencidina",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+32,"4,4'-Diaminodifenilmetano",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+33,"4,4'-Metilen-bis (2-cloroanilina)",Sustancias Restringidas,µg/mL,0.01,7,7,100.0,13,100.0,5,1
+34,Amarillo disperso 3,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+35,Azul basico 26- Azul victoria,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+36,Bencidina,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+37,Bis(2-n-butoxietil) Ftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+38,Butilbencilftalato,Sustancias Restringidas,µg/mL,0.01,3,7,42.9,5,38.5,2,0
+39,Cafe disperso 1,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+40,Clorfenvinfos,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+41,Clorotalonil,Sustancias Restringidas,µg/mL,0.01,7,7,100.0,13,100.0,5,1
+42,Diamilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+43,"Dibenzo (a,h) antraceno",Sustancias Restringidas,µg/mL,0.01,3,7,42.9,3,23.1,0,0
+44,Diciclohexiftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+45,Dicrotofos,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+46,Dietilftalato,Sustancias Restringidas,µg/mL,0.01,7,7,100.0,13,100.0,5,1
+47,Dihexilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+48,Diisobutilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+49,Diisohexilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+50,Diisononilftalato,Sustancias Restringidas,µg/mL,0.01,7,7,100.0,10,76.9,3,0
+51,Dimetilformamida,Sustancias Restringidas,µg/mL,0.01,7,7,100.0,13,100.0,5,1
+52,Dimetilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+53,Dimetilfumarato,Sustancias Restringidas,µg/mL,0.01,7,7,100.0,13,100.0,5,1
+54,Di-n-butilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+55,Di-n-octilftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+56,Esfenvalerato,Sustancias Restringidas,µg/mL,0.01,3,7,42.9,7,53.8,3,1
+57,Fenantreno,Sustancias Restringidas,µg/mL,0.01,4,7,57.1,5,38.5,1,0
+58,Fluoranteno,Sustancias Restringidas,µg/mL,0.01,4,7,57.1,9,69.2,4,1
+59,Naranja disperso 1,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+60,o-Aminoazotolueno,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+61,o-Anisidina,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+62,o-Toluidina,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+63,p-Cresidina,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+64,Profenofos,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+65,Rojo ácido 26,Sustancias Restringidas,µg/mL,0.01,2,7,28.6,4,30.8,2,0
+66,Rojo básico 9,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+67,Strobano,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+68,TCMTB,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+69,2-2'-Dibromobifenil,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+70,"2,4-Dimetilanilina",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+71,4-Aminoazobenceno,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+72,Benzo(a)antraceno,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+73,Benzo(a)pireno,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+74,Benzo(b)flouranteno,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+75,Bis(2-etoxietil)ftalato,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+76,Criseno,Sustancias Restringidas,µg/mL,0.01,6,7,85.7,12,92.3,5,1
+77,Dinonilftalato,Sustancias Restringidas,µg/mL,0.01,3,7,42.9,6,46.2,2,1
+78,Pertano,Sustancias Restringidas,µg/mL,0.01,3,7,42.9,8,61.5,4,1
+79,Rojo disperso 1,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+80,Tolifluanida,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+81,"2,4-Diaminoanisol",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+82,Benzotiazol,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+83,Naranja disperso 3,Sustancias Restringidas,µg/mL,0.01,1,7,14.3,2,15.4,0,1
+84,"2,3,4,5-Tetraclorofenol",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+85,"2,3,4,6-Tetraclorofenol",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+86,"2,3,5,6-Tetraclorofenol",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+87,"2,4-Dinitrofenol",Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+88,2-Nitrofenol,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+89,4-Nitrofenol,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+90,4-tert-octilfenol,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+91,Dinoseb,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+92,Fromadelhido,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+93,Navy blue,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+94,Pentacloroanisol,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+95,Pentaclorofenol,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
+96,p-Nonilfenol,Sustancias Restringidas,µg/mL,0.01,7,7,100.0,12,92.3,4,1
+97,Propetamfos,Sustancias Restringidas,µg/mL,0.01,0,7,0.0,0,0.0,0,0
