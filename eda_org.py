@@ -138,7 +138,7 @@ def calcular_resumen_deteccion(df_raw, df_detected, df_muestras_info, sample_ids
 
 # 3. GENERACIÓN DE VISUALIZACIONES
 
-def graficar_tasa_deteccion(resumen, output_dir='figuras'):
+def graficar_tasa_deteccion(resumen, output_dir='figuras/organico'):
     """
     gráfico de barras con los contaminantes más frecuentes
     """
@@ -184,7 +184,7 @@ def graficar_tasa_deteccion(resumen, output_dir='figuras'):
     print(f"-> Gráfica guardada: {ruta_guardado}")
 
 
-def graficar_huella_quimica_heatmap(df_raw, df_detected, df_muestras_info, output_dir='figuras'):
+def graficar_huella_quimica_heatmap(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico'):
     """
     mapa de calor binario (Detectado vs < LPC) ordenado por lavandería y tipo
     """
@@ -241,7 +241,7 @@ def graficar_huella_quimica_heatmap(df_raw, df_detected, df_muestras_info, outpu
     print(f"-> Gráfica guardada: {ruta_guardado}")
 
 
-def graficar_huella_quimica_completa(df_raw, df_detected, df_muestras_info, output_dir='figuras'):
+def graficar_huella_quimica_completa(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico'):
     """
     mapa de calor binario completo con los 97 compuestos monitoreados en agua cruda (ST)
     permite visualizar la proporción real de datos censurados (< LPC, 76%) vs detectados
@@ -322,7 +322,7 @@ def _preparar_consistencia(df_raw, df_detected, df_muestras_info):
     )
 
 
-def graficar_consistencia_pie(df_raw, df_detected, df_muestras_info, output_dir='figuras'):
+def graficar_consistencia_pie(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico'):
     """
     Gráfico de pastel: distribución de los 34 contaminantes según cuántas lavanderías los tienen.
     """
@@ -353,7 +353,7 @@ def graficar_consistencia_pie(df_raw, df_detected, df_muestras_info, output_dir=
     print(f"-> Gráfica guardada: {ruta_guardado}")
 
 
-def graficar_consistencia_barras(df_raw, df_detected, df_muestras_info, output_dir='figuras'):
+def graficar_consistencia_barras(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico'):
     """
     Gráfico de barras horizontales: ubicuidad de cada compuesto en las 5 lavanderías.
     """
@@ -386,7 +386,7 @@ def graficar_consistencia_barras(df_raw, df_detected, df_muestras_info, output_d
     print(f"-> Gráfica guardada: {ruta_guardado}")
 
 
-def graficar_huella_24_compuestos(df_raw, df_detected, df_muestras_info, mask_24, output_dir='figuras'):
+def graficar_huella_24_compuestos(df_raw, df_detected, df_muestras_info, mask_24, output_dir='figuras/organico'):
     """
     mapa de calor para el universo filtrado de 24 compuestos prioritarios (>= 3 lavanderías)
     """
@@ -480,18 +480,18 @@ def exportar_muestras_filtradas(df_raw, df_detected, df_muestras_info, ruta_csv_
             rows_24_st.append([row[i] for i in st_indices])
 
     # 1. Exportar muestras_24.csv (todas las muestras)
-    for ruta in set([output_csv, os.path.join(output_dir, output_csv)]):
-        with open(ruta, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerows(rows_24_completo)
-        print(f"-> Archivo CSV filtrado exportado: {ruta} ({num_seleccionados} compuestos, todas las muestras)")
+    ruta = os.path.join(output_dir, output_csv)
+    with open(ruta, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerows(rows_24_completo)
+    print(f"-> Archivo CSV filtrado exportado: {ruta} ({num_seleccionados} compuestos, todas las muestras)")
 
     # 2. Exportar muestras_24_st.csv (solo muestras ST)
-    for ruta in set([output_csv_st, os.path.join(output_dir, output_csv_st)]):
-        with open(ruta, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerows(rows_24_st)
-        print(f"-> Archivo CSV ST exportado: {ruta} ({num_seleccionados} compuestos, 7 muestras ST)")
+    ruta = os.path.join(output_dir, output_csv_st)
+    with open(ruta, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerows(rows_24_st)
+    print(f"-> Archivo CSV ST exportado: {ruta} ({num_seleccionados} compuestos, 7 muestras ST)")
 
     # 3. Exportar resumen tabular estructurado en outputs/
     df_resumen_24 = df_raw.loc[mask_filtrada, ['id_compuesto', 'nombre_compuesto', 'familia', 'unidad', 'lpc']].copy()
@@ -572,12 +572,12 @@ def main():
     print("\n" + "=" * 75)
     print(" GENERANDO VISUALIZACIONES...")
     print("=" * 75)
-    graficar_tasa_deteccion(resumen, output_dir='figuras')
-    graficar_huella_quimica_heatmap(df_raw, df_detected, df_muestras_info, output_dir='figuras')
-    graficar_huella_quimica_completa(df_raw, df_detected, df_muestras_info, output_dir='figuras')
-    graficar_consistencia_pie(df_raw, df_detected, df_muestras_info, output_dir='figuras')
-    graficar_consistencia_barras(df_raw, df_detected, df_muestras_info, output_dir='figuras')
-    graficar_huella_24_compuestos(df_raw, df_detected, df_muestras_info, mask_24, output_dir='figuras')
+    graficar_tasa_deteccion(resumen, output_dir='figuras/organico')
+    graficar_huella_quimica_heatmap(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico')
+    graficar_huella_quimica_completa(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico')
+    graficar_consistencia_pie(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico')
+    graficar_consistencia_barras(df_raw, df_detected, df_muestras_info, output_dir='figuras/organico')
+    graficar_huella_24_compuestos(df_raw, df_detected, df_muestras_info, mask_24, output_dir='figuras/organico')
 
     print("\n[ÉXITO] EDA de agua cruda completado. Revisa las figuras en './figuras' y outputs en './outputs'.")
 

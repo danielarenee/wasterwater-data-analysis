@@ -9,7 +9,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-import eda
+import eda_org as eda
 
 # Estilo gráfico
 plt.style.use('seaborn-v0_8-whitegrid' if 'seaborn-v0_8-whitegrid' in plt.style.available else 'default')
@@ -41,7 +41,7 @@ def imputar_dataset_epa(df_raw, df_detected, sample_ids):
 
 # PANEL DE HISTOGRAMAS (JUSTIFICACIÓN HORNUNG & REED)
 
-def graficar_histogramas_imputados(df_raw, df_detected, sample_ids, output_dir='figuras'):
+def graficar_histogramas_imputados(df_raw, df_detected, sample_ids, output_dir='figuras/organico'):
     """
     Histogramas de los 10 compuestos que requieren imputación (< LPC).
     """
@@ -100,7 +100,7 @@ def graficar_histogramas_imputados(df_raw, df_detected, sample_ids, output_dir='
 
 # BOXPLOTS DE CONCENTRACIÓN (ESCALA LOGARÍTMICA, ORDENADOS POR MEDIANA)
 
-def graficar_boxplots(df_imputado, df_raw, sample_ids, output_dir='figuras'):
+def graficar_boxplots(df_imputado, df_raw, sample_ids, output_dir='figuras/organico'):
     """
     Genera boxplots en escala logarítmica ordenados por mediana con puntos individuales (strip plot) y línea de LPC.
     """
@@ -215,31 +215,30 @@ def exportar_dataset_imputado(df_raw, sample_ids, df_imputado, ruta_csv_base='mu
         vals = [f"{df_imputado.loc[i, s]:.4f}" for s in sample_ids]
         filas_exportar.append([id_val, nombre_val] + vals)
 
-    rutas = [output_csv, os.path.join(output_dir, output_csv)]
-    for ruta in set(rutas):
-        with open(ruta, 'w', newline='', encoding='utf-8') as f:
-            writer = csv.writer(f)
-            writer.writerows(filas_exportar)
-        print(f"-> Dataset imputado exportado: {ruta}")
+    ruta = os.path.join(output_dir, output_csv)
+    with open(ruta, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerows(filas_exportar)
+    print(f"-> Dataset imputado exportado: {ruta}")
 
 
 # MAIN
 
 def main():
     # 1. Cargar datos
-    df_raw, df_muestras_info, df_detected, df_concentraciones, sample_ids = eda.cargar_datos('muestras_24_st.csv')
+    df_raw, df_muestras_info, df_detected, df_concentraciones, sample_ids = eda.cargar_datos('outputs/muestras_24_st.csv')
 
     # 2. Imputar dataset vía US EPA (LPC / sqrt(2))
     df_imputado_epa = imputar_dataset_epa(df_raw, df_detected, sample_ids)
 
     # 3. Exportar dataset imputado
     print("EXPORTANDO DATASET IMPUTADO...")
-    exportar_dataset_imputado(df_raw, sample_ids, df_imputado_epa, ruta_csv_base='muestras_24_st.csv', output_csv='muestras_24_st_imputado_epa.csv', output_dir='outputs')
+    exportar_dataset_imputado(df_raw, sample_ids, df_imputado_epa, ruta_csv_base='outputs/muestras_24_st.csv', output_csv='muestras_24_st_imputado_epa.csv', output_dir='outputs')
 
     # 4. Generar visualizaciones
     print("GENERANDO VISUALIZACIONES...")
-    graficar_histogramas_imputados(df_raw, df_detected, sample_ids, output_dir='figuras')
-    graficar_boxplots(df_imputado_epa, df_raw, sample_ids, output_dir='figuras')
+    graficar_histogramas_imputados(df_raw, df_detected, sample_ids, output_dir='figuras/organico')
+    graficar_boxplots(df_imputado_epa, df_raw, sample_ids, output_dir='figuras/organico')
 
     print("[ÉXITO] Imputación y boxplots completados.")
 
