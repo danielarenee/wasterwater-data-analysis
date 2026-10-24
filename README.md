@@ -18,10 +18,6 @@ valores censurados → figuras y tablas**.
 
 ```
 serviciosocial/
-├── muestras.csv            # INPUT orgánico (CIATEC)
-├── Información/            # Datos crudos de laboratorio y muestreo
-│   └── A26-15546Final.xlsx #   INPUT inorgánico (Actlabs)
-│
 ├── eda_org.py              # EDA orgánico
 ├── imputacion_org.py       # Imputación orgánica
 ├── preparar_metales.py     # Excel de Actlabs → CSV
